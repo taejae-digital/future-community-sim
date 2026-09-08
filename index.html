@@ -1,0 +1,135 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>다음의 생활권 · 미래 공동체 시뮬레이션</title><style>
+:root{--ink:#132c43;--muted:#5b6b78;--line:#d9e2e7;--paper:#f3f6f7;--accent:#27758c}*{box-sizing:border-box}body{margin:0;background:white;color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}button,select,input{font:inherit;color:inherit}button,select{background:white;border:1px solid #aebdc7;padding:9px 14px;border-radius:0;cursor:pointer}button:hover,button.active{background:var(--ink);color:white}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #27758c;outline-offset:3px}.notice{background:var(--ink);color:white;padding:9px 4%;font-size:14px;letter-spacing:.04em}header{padding:25px 4% 14px;display:flex;justify-content:space-between;align-items:end;gap:20px}.eyebrow{font-size:13px;letter-spacing:.17em;color:var(--muted);font-weight:700}h1{font-size:42px;letter-spacing:-.06em;line-height:1.2;margin:7px 0 9px}h2{font-size:26px;letter-spacing:-.04em;margin:0 0 12px}p{margin:5px 0 12px}.sub{color:var(--muted);font-size:16px}main{padding:0 4% 40px}.scenarios{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 18px}.scenarios button{flex:1;min-width:190px;font-weight:650}.hero{display:grid;grid-template-columns:minmax(0,1fr) 290px;border:1px solid var(--line);background:var(--paper)}.map-stage{position:relative;min-width:0;background:#f4f8f8;overflow:hidden}.map-title{position:absolute;top:18px;left:22px;z-index:1}.map-title strong{font-size:20px}.map-title small{display:block;color:var(--muted)}svg.map{width:100%;height:auto;display:block}.map text{font-family:inherit;fill:var(--ink)}.map .city{cursor:pointer;outline:none}.map .city:focus .ground{stroke:#27758c;stroke-width:4}.city-body{transition:transform .65s}.map-caption{position:absolute;bottom:12px;left:22px;font-size:13px;color:var(--muted)}.aside{padding:22px;background:white;border-left:1px solid var(--line)}.year{font-size:64px;line-height:1.1;font-weight:750;letter-spacing:-.07em}.year span{font-size:18px;letter-spacing:0}.metric{padding:13px 0;border-top:1px solid var(--line)}.metric b{font-size:28px;display:block;line-height:1.2}.metric small{color:var(--muted)}.timeline{display:flex;align-items:center;gap:14px;padding:15px 18px;border:1px solid var(--line);border-top:0;flex-wrap:wrap}.timeline input{flex:1;min-width:110px;accent-color:var(--ink)}.tag{font-size:13px;background:#e7eff2;padding:3px 8px}.section{margin-top:32px}.communities{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border:1px solid var(--line)}.community{padding:17px 14px;border-right:1px solid var(--line)}.community:last-child{border:0}.community h3{font-size:21px;margin:0}.community em{font-style:normal;display:block;color:var(--accent);font-weight:700;margin:3px 0}.community p{font-size:14px;color:var(--muted);line-height:1.65}.bar{height:4px;background:#e2e9ec;margin:12px 0}.bar i{display:block;height:100%;background:var(--accent)}.lower{display:grid;grid-template-columns:1.35fr 1fr;gap:24px}.panel{border:1px solid var(--line);padding:23px}.controls{display:grid;grid-template-columns:1fr 1fr;gap:18px}.theme{border-top:2px solid var(--ink);padding-top:10px}.theme h3{font-size:19px;line-height:1.4;margin:0 0 8px}.theme p{font-size:13px;color:var(--muted)}label.control{display:grid;grid-template-columns:1fr auto;gap:4px;font-size:15px;margin:11px 0}label.control input{grid-column:1/3;width:100%;accent-color:var(--ink)}output{font-weight:750}.households{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.households button{font-size:15px;padding:7px 10px}.house-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.house-metrics b{font-size:30px;display:block}.house-metrics small{font-size:13px;color:var(--muted)}.story{font-size:18px;line-height:1.8;border-left:3px solid var(--accent);padding-left:16px}.compare-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.compare-card{border:1px solid var(--line);padding:14px}.compare-card h3{font-size:18px;min-height:54px;margin:0}.compare-card svg{background:var(--paper)}.compare-card dl{font-size:14px;display:grid;grid-template-columns:1fr auto;gap:5px;margin:12px 0}.compare-card dd{margin:0;font-weight:700}details{border-top:1px solid var(--line);padding:18px 0}summary{font-size:20px;font-weight:700;cursor:pointer}pre{font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--paper);padding:18px}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:14px;color:var(--muted)}[hidden]{display:none!important}@media(min-width:1600px){main,header{max-width:1700px;margin:auto}}@media(max-width:950px){.hero{grid-template-columns:1fr 240px}.communities{grid-template-columns:repeat(3,1fr)}.lower{grid-template-columns:1fr}.compare-grid{grid-template-columns:1fr 1fr}h1{font-size:36px}}@media(max-width:600px){body{font-size:16px}header{display:block;padding-top:18px}h1{font-size:32px}.notice{font-size:12px}.hero{grid-template-columns:1fr}.aside{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;padding:15px;gap:8px}.aside .intro{grid-column:1/3}.year{font-size:38px}.metric{padding:7px 0}.metric b{font-size:23px}.map-title{top:8px;left:12px}.map-title strong{font-size:16px}.map-title small{font-size:11px}.map-caption{position:static;padding:0 12px 10px;font-size:11px}.scenarios{gap:6px}.scenarios button{min-width:140px;font-size:14px;padding:9px 5px}.communities{grid-template-columns:repeat(2,1fr)}.controls,.compare-grid{grid-template-columns:1fr}.panel{padding:16px}.timeline{padding:12px;gap:8px}.timeline button,.timeline select{font-size:14px;padding:7px}.compare-card h3{min-height:0}.map-stage svg{margin-top:32px}.compare-card svg{max-height:260px}.community p{font-size:14px}.sub{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.city-body{transition:none}}</style></head><body>
+<div class="notice">RESEARCH SANDBOX · 합성 데이터 / 검증 전 가정 / 실제 예측 아님</div>
+<header><div><div class="eyebrow">TAEJAE · FUTURE COMMUNITY LAB</div><h1>다음의 생활권</h1><p class="sub">어디에 살고, 어떻게 연결될까? 도시를 움직여 가설을 살펴보세요.</p></div><button id="compare-toggle">네 가지 미래 비교 ↗</button></header>
+<main><nav class="scenarios" id="scenario-buttons" aria-label="시나리오"></nav>
+<div class="hero"><div class="map-stage"><div class="map-title"><strong id="map-name"></strong><small>도시를 선택해 그곳의 한 주를 살펴보세요</small></div><svg id="world" class="map" viewBox="0 0 720 550" role="img" aria-label="인구 크기와 방문 흐름을 보여주는 가상 도시망"></svg><div class="map-caption">원 면적 ∝ 인구 · 이동 점 = 교류 방문(설명용) · 실재 지리 아님</div></div><aside class="aside"><div class="intro"><div class="eyebrow">YEARS AFTER / 같은 출발, 다른 조건</div><div class="year"><b id="year-label">10</b><span> 년 후</span></div><span id="mode-label" class="tag"></span></div><div id="hero-metrics" style="display:contents"></div><p class="sub" style="font-size:13px">20만 명 · 연간 공공예산 100<br>시드 42 · 다섯 도시의 닫힌 인구계</p></aside></div>
+<div class="timeline"><button id="play" aria-label="시간 재생">▶ 재생</button><button id="reset">↺ 초기화</button><span>0년</span><input id="year" type="range" min="0" max="20" value="10" aria-label="시뮬레이션 연도"><span>20년</span><select id="speed" aria-label="재생 속도"><option value="1000">1×</option><option value="300">3×</option><option value="1800">0.5×</option></select><button id="download">JSON 저장 ↓</button></div>
+<section class="section"><h2>생활은 여섯 층위에서 이어집니다</h2><p class="sub">기능 연결은 연구 가설입니다. 서로 겹치는 공동체이지, 인구를 나누는 여섯 집단이 아닙니다.</p><div class="communities" id="communities"></div></section>
+<div class="lower section"><section class="panel"><h2>조건을 바꾸면, 경로가 달라집니다</h2><p class="sub">모든 입력은 0–100 가정값. 수정하면 ‘사용자 정의’로 분리됩니다.</p><div class="controls" id="controls"></div><div id="budget-control"></div><p class="sub" style="font-size:13px">거점 배분을 제외한 예산은 네 강소도시에 균등 배분합니다. 총량은 항상 100입니다.</p></section>
+<section class="panel"><div class="eyebrow">ONE WEEK / 개인 이야기</div><h2>이 도시에서 산다면</h2><select id="city-select" aria-label="거주 도시"></select><div class="households" id="households"></div><div class="house-metrics" id="house-metrics"></div><p class="story" id="story"></p><p class="sub">가구 선택은 이야기·부담만 바꿉니다. 도시 인구를 바꾸지 않습니다. 개인과 인구 집계는 서로 다른 해상도의 설명입니다.</p><hr style="border:0;border-top:1px solid var(--line);margin:25px 0"><h3>기술은 정체성을 만들지 않습니다.</h3><p>발견하고 발휘하는 일을 지원합니다. 강소도시는 3~5만 명 규모의 다양한 산업·거버넌스와 구독형 생활의 구상입니다.</p><p class="sub">서버시티는 스포츠·문화·교류 거점입니다. AI 데이터센터가 아닙니다. 거점에 주거·일자리가 다시 몰리는 경로도 열려 있습니다. 3~5만 명은 강제 경계가 아닌 출발 구상입니다.</p></section></div>
+<section id="comparison" class="section" hidden><h2>같은 시간, 네 가지 조건</h2><p class="sub" id="comparison-note"></p><div class="compare-grid" id="compare-grid"></div></section>
+<section class="section"><details id="formulas"><summary>계산식·계수·해석의 한계 펼치기</summary><p>모든 계수는 검증 전 설정입니다. 지수는 0–100 경계 함수 C로 제한합니다. 종합점수·승자 판정은 없습니다. 인구만 명 단위, 거점 비중·청정에너지·예산 배분만 %입니다. 그 밖의 결과는 지수입니다.</p><pre id="formula-text"></pre><p>시간 0은 공통 초기 상태입니다. 선택한 입력은 첫 연간 갱신부터 적용합니다. 이주는 전년도 인구에 대한 동시 흐름으로 계산하며 총인구를 보존합니다. 총 공공예산은 매년 100 가상 예산단위로 고정합니다.</p><p>출생·사망, 국제 이주, 실제 소득·가격·배출량, 인프라 건설 지연, 관계망 재형성은 포함하지 않았습니다. 보장/발견 등 공동체 기능은 아래 대리지수와 연결한 해석이며 계산으로 입증되지 않습니다.</p></details></section>
+<footer>독립 실행 연구 프로토타입 · 인터넷 연결/외부 라이브러리/개인정보 수집 없음 · 결과는 정책 효과나 미래의 확정적 결론이 아닙니다.</footer></main>
+<script id="model-source">/* 미래 공동체: 합성 자료와 검증 전 인과 가설. 실측·예측 모델이 아님. */
+(function(root){
+'use strict';
+const clamp=(v,a=0,b=100)=>Math.max(a,Math.min(b,v));
+const names=['물결 도시','숲길 도시','들녘 도시','해솔 도시','서버시티'];
+const positions=[[160,170],[530,130],[150,410],[550,405],[355,285]];
+const defaults={cooperation:65,trade:65,clean:65,travel:35,ai:65,remote:55,platform:30,youth:65,education:65,hubBudget:35};
+const scenarios={
+ metro:{name:'대도시 집중',inputs:{...defaults,cooperation:70,trade:75,clean:45,travel:35,ai:75,remote:25,platform:40,youth:40,education:75,hubBudget:75}},
+ network:{name:'강소도시–서버시티 연결',inputs:{...defaults}},
+ platform:{name:'플랫폼 종속',inputs:{...defaults,cooperation:80,trade:85,clean:55,travel:30,ai:90,remote:85,platform:90,youth:25,education:60,hubBudget:45}},
+ fragmented:{name:'세계 분절',inputs:{...defaults,cooperation:15,trade:20,clean:40,travel:80,ai:40,remote:30,platform:45,youth:45,education:45,hubBudget:45}}
+};
+const fields=[['세계 경영',[['cooperation','국경 간 협력'],['trade','교역 접근']],'협력·교역 → 도시의 기회·서비스 접근'],['지속가능성',[['clean','청정에너지 비중'],['travel','이동 에너지 부담']],'이동비 → 방문 감소·현장노동 부담 / 청정에너지 → 에너지부담 완화'],['디지털 전환과 사회 변혁',[['ai','AI 접근'],['remote','원격근무 가능'],['platform','플랫폼 수익 집중']],'AI·원격 접근 → 기회 / 수익 집중 → 지역 기회 유출'],['다음세대 시대가치',[['youth','청년 의사결정 참여'],['education','교육/탐색 접근']],'참여·탐색 → 청년 선택 여건 (도덕성 평가 아님)']];
+function normalize(input){const p={...defaults,...input};Object.keys(defaults).forEach(k=>{if(!Number.isFinite(p[k]))throw Error('유효하지 않은 입력: '+k);p[k]=clamp(p[k]);});return p;}
+function snapshot(pop,p,year){
+ const cities=pop.map((population,i)=>{
+  const hub=i===4, budget=hub?p.hubBudget:(100-p.hubBudget)/4;
+  const pressure=clamp(20+42*(population/40000-1));
+  const visits=clamp((24+.30*p.cooperation+.15*p.trade)*(1-.007*p.travel)*(hub?1.12:1));
+  const opportunity=clamp(18+.18*p.ai+.10*p.trade+.09*p.cooperation+.10*p.education+.11*p.remote*(hub?.35:1)-.15*p.platform*(hub?.35:1)+.38*budget+(hub?8:0)-.19*pressure+(i-2)*.8);
+  const service=clamp(22+.32*budget+.20*p.education+.13*p.ai+.14*visits-.16*pressure+(hub?13:0));
+  const mobility=clamp(9+.48*p.travel+.10*pressure+(hub?0:10)*(1-p.remote/100));
+  const energy=clamp((23+.42*visits+.35*mobility)*(1-.0075*p.clean));
+  const choice=clamp(.40*opportunity+.25*p.education+.25*p.youth+.10*p.remote-.10*pressure);
+  return {name:names[i],population,budget,pressure,visits,opportunity,service,mobility,energy,choice,x:positions[i][0],y:positions[i][1]};
+ });
+ const metrics={hubShare:pop[4]/200000*100};
+ ['service','mobility','energy','choice','visits','pressure','opportunity'].forEach(k=>metrics[k]=cities.reduce((s,c)=>s+c[k]*c.population/200000,0));
+ return {year,population:pop.reduce((a,b)=>a+b,0),cities,metrics};
+}
+function simulate(input=defaults,years=20,seed=42){
+ const p=normalize(input);years=Math.floor(clamp(years,0,20));
+ // Seed fixes small city-specific opportunity differences; no fresh random draws.
+ let pop=names.map(()=>40000),history=[snapshot(pop,defaults,0)],flows=[];
+ const jitter=names.map((_,i)=>(((seed*(i+3)*9301+49297)%233280)/233280-.5)*1.5);
+ for(let y=1;y<=years;y++){
+  const prev=snapshot(pop,p,y-1);
+  const utility=prev.cities.map((c,i)=>.56*c.opportunity+.30*c.service-.38*c.pressure-.18*c.mobility+jitter[i]);
+  const mx=Math.max(...utility),weights=utility.map(u=>Math.exp((u-mx)/12)),sum=weights.reduce((a,b)=>a+b,0);
+  // Common migration friction (care/relationships not separately modeled): 2.5–5%, hard cap 6%.
+  const rate=Math.min(.06,.025+.00025*p.remote);
+  const matrix=pop.map((n,i)=>weights.map((w,j)=>i===j?0:n*rate*w/sum));
+  flows.push({year:y,rate,matrix,outflow:matrix.map(row=>row.reduce((a,b)=>a+b,0)),inflow:pop.map((_,j)=>matrix.reduce((s,row)=>s+row[j],0))});
+  pop=pop.map((n,i)=>n*(1-rate)+200000*rate*weights[i]/sum);
+  pop[4]+=200000-pop.reduce((a,b)=>a+b,0);
+  history.push(snapshot(pop,p,y));
+ }
+ return {inputs:p,seed,budget:100,flows,history,final:history[years]};
+}
+const households=['맞벌이·자녀','원격근무','현장노동','고령·돌봄'];
+function household(state,p,type=0,city=0){
+ const c=state.cities[city], travelFactor=[1.12,.45,1.4,.85][type],remoteEffect=[.15,.65,.02,.06][type];
+ const burden=clamp(c.mobility*travelFactor*(1-remoteEffect*p.remote/100)+[6,0,8,12][type]);
+ const service=clamp(c.service+[p.education*.12,p.ai*.10,-3,-8][type]-burden*.12);
+ const choice=clamp(c.choice+[0,p.remote*.16,-burden*.14,-burden*.2][type]);
+ const trips=Math.max(0,Math.round((type===2?5:type===1?2:4)*(1-.006*p.travel)));
+ const story=[`등하교·돌봄과 출근을 함께 조율합니다. 교육/탐색 접근 ${p.education}이 선택 여건에 반영됩니다.`,`원격근무 가능 ${p.remote}에 따라 통근 부담이 줄지만, 플랫폼 수익 집중 ${p.platform}은 지역 기회를 낮춥니다.`,`원격으로 대체하기 어려운 현장 업무입니다. 이동 에너지 부담 ${p.travel}이 이동 부담에 더 크게 반영됩니다.`,`돌봄·진료 접근을 우선합니다. 도시 서비스와 이동 부담을 함께 고려하며 관계·돌봄을 구분하지 않은 공통 이주마찰을 가정합니다.`][type];
+ return {burden,service,choice,trips,story:`${c.name}에서 보내는 가상 한 주. 교류·서비스 방문 약 ${trips}회(설명용 환산, 출근 횟수 아님). ${story}`};
+}
+function communities(s,p){const m=s.metrics;return [
+ ['가정','발견',m.choice,`교육/탐색 ${p.education}과 선택기회 ${m.choice.toFixed(0)}. 주거압력 ${m.pressure.toFixed(0)}이 탐색 여유를 제약.`],
+ ['이웃','교류',m.visits,`협력 ${p.cooperation}·이동비 ${p.travel} → 방문 ${m.visits.toFixed(0)}. 관계·돌봄을 구분하지 않는 공통 이주마찰 가정: 연간 최대 6%.`],
+ ['마을','개발',m.opportunity,`AI 접근 ${p.ai}·수익 집중 ${p.platform} → 기회 ${m.opportunity.toFixed(0)}. 지역 개발 역량의 대리지수.`],
+ ['도시','발현',m.service,`거점 예산 ${p.hubBudget} → 서비스 ${m.service.toFixed(0)}. 인구 재집중 시 혼잡이 접근을 낮춤.`],
+ ['국가','보장',100-m.pressure,`총 공공예산 100 고정. 주거압력 ${m.pressure.toFixed(0)}에 따라 보장 여건이 제약됨.`],
+ ['세계','확장',(p.cooperation+p.trade+m.opportunity)/3,`협력 ${p.cooperation}·교역 ${p.trade}·도시 기회 ${m.opportunity.toFixed(0)} → 확장 여건. 외부 충격은 별도 미모형화.`]
+ ];}
+const api={defaults,scenarios,fields,households,simulate,household,communities,normalize};
+if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CommunityModel=api;
+})(typeof window!=='undefined'?window:globalThis);
+</script><script>
+const M=CommunityModel,$=s=>document.querySelector(s);let selected='network',inputs={...M.scenarios.network.inputs},year=10,city=0,family=0,timer=null,result,custom=false;
+const labels={hubShare:'거점 인구비중',service:'서비스 접근',mobility:'이동부담',energy:'에너지부담',choice:'청년 선택기회',visits:'교류 방문'};
+function control(k,name){return `<label class="control" for="${k}">${name}<output id="out-${k}"></output><input data-param="${k}" id="${k}" type="range" min="0" max="100" step="1" value="${inputs[k]}"></label>`}
+$('#scenario-buttons').innerHTML=Object.entries(M.scenarios).map(([id,s])=>`<button data-scenario="${id}">${s.name}</button>`).join('');
+$('#controls').innerHTML=M.fields.map(([name,fs,path])=>`<div class="theme"><h3>${name}</h3><p>가설: ${path}</p>${fs.map(([k,n])=>control(k,n+(k==='clean'?' (%)':''))).join('')}</div>`).join('');$('#budget-control').innerHTML=control('hubBudget','거점 공공예산 배분 (%)');
+$('#city-select').innerHTML=M.simulate().final.cities.map((c,i)=>`<option value="${i}">${c.name}</option>`).join('');$('#households').innerHTML=M.households.map((n,i)=>`<button data-family="${i}">${n}</button>`).join('');
+const defs=`<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#e6edef" stroke-width="1"/></pattern></defs>`;
+function buildings(c,i){let s='';if(i===4){s+=`<ellipse cx="0" cy="2" rx="40" ry="23" fill="#d1dfe3" stroke="#fff" stroke-width="5"/><ellipse cx="0" cy="-2" rx="29" ry="14" fill="#6d9298"/><path d="M-18 -2H18M0 -15V11" stroke="white" fill="none"/><path d="M-42 -12V-42H-11V-12" fill="#315169"/><path d="M-45 -42L-26 -53L-8 -42" fill="#7893a3"/>`;}
+else{for(let b=0;b<7;b++){let x=(b%3)*21-29,y=Math.floor(b/3)*16-9,h=18+((i*13+b*7)%24);s+=`<path d="M${x} ${y}v-${h}l12 -5v${h}Z" fill="#54758b"/><path d="M${x+12} ${y-h-5}l8 5v${h}l-8 -0Z" fill="#9ab1bf"/><path d="M${x} ${y-h}l8 4l12 -4l-8 -5Z" fill="#d8e4e9"/><path d="M${x+4} ${y-h+6}v7m0 4v5" stroke="#ebf2f5" stroke-width="3"/>`;}}
+for(let t=0;t<4;t++){let x=-48+t*30,y=32+(t%2)*8;s+=`<path d="M${x} ${y}v-13" stroke="#5b786e" stroke-width="3"/><circle cx="${x}" cy="${y-16}" r="9" fill="#a9bfb7"/>`;}return s;}
+function mapSVG(state,mini=false,uid='main'){
+ let s=defs+`<rect width="720" height="550" fill="#f3f7f7"/><rect width="720" height="550" fill="url(#grid)"/><path d="M-30 350Q130 235 300 350T770 270" fill="none" stroke="#dfecf0" stroke-width="42"/><path d="M-30 350Q130 235 300 350T770 270" fill="none" stroke="#fff" stroke-width="1"/>`;
+ const hub=state.cities[4];state.cities.slice(0,4).forEach((c,i)=>{const width=2+c.visits/15;s+=`<path d="M${c.x} ${c.y}L${hub.x} ${hub.y}" stroke="#d1dfe5" stroke-width="${width+5}"/><path d="M${c.x} ${c.y}L${hub.x} ${hub.y}" stroke="#708d9e" stroke-width="1.5" stroke-dasharray="5 8"/>`;
+ if(!mini&&c.visits>0){for(let j=0;j<Math.ceil(c.visits/10);j++){const dur=3+(100-c.visits)/18;s+=`<circle r="${j%2?2.5:3.5}" fill="${j%2?'#6a9395':'#183e58'}"><animateMotion dur="${dur}s" begin="-${j*dur/Math.ceil(c.visits/10)}s" repeatCount="indefinite" path="M${c.x} ${c.y}L${hub.x} ${hub.y}"/></circle>`;}}});
+ state.cities.forEach((c,i)=>{let scale=Math.sqrt(c.population/40000);s+=`<g class="city" ${mini?'':`data-city="${i}" tabindex="0" role="button" aria-label="${c.name} 선택"`} transform="translate(${c.x} ${c.y})"><g class="city-body" transform="scale(${scale})"><ellipse class="ground" rx="77" ry="44" fill="${i===4?'#d3e2e7':'#e0e9e5'}" stroke="${i===city&&!mini?'#27758c':'#c5d5d8'}" stroke-width="${i===city&&!mini?3:1}"/><ellipse cy="5" rx="65" ry="31" fill="none" stroke="white" stroke-width="2"/>${buildings(c,i)}</g><rect x="-76" y="58" width="152" height="${mini?53:60}" fill="#ffffff" fill-opacity=".94"/><text y="81" text-anchor="middle" font-size="${mini?22:19}" font-weight="750">${c.name}</text><text y="103" text-anchor="middle" font-size="${mini?19:16}">${(c.population/10000).toFixed(2)}만 명${i===4?' · 문화':''}</text></g>`;});return s;}
+function render(){result=M.simulate(inputs,20,42);const state=result.history[year],effective=year===0?M.defaults:inputs;$('#year').value=year;$('#year-label').textContent=year;$('#mode-label').textContent=custom?'사용자 정의 · 원본과 별도':M.scenarios[selected].name;$('#map-name').textContent=custom?'내가 조정한 생활권':M.scenarios[selected].name;$('#world').innerHTML=mapSVG(state);$('#hero-metrics').innerHTML=['hubShare','service','mobility','energy'].map(k=>`<div class="metric"><small>${labels[k]}${k==='hubShare'?'':' · 지수'}</small><b>${state.metrics[k].toFixed(1)}<span style="font-size:15px">${k==='hubShare'?' %':' /100'}</span></b></div>`).join('');
+ document.querySelectorAll('[data-scenario]').forEach(b=>{b.classList.toggle('active',b.dataset.scenario===selected&&!custom);b.setAttribute('aria-pressed',b.classList.contains('active'))});document.querySelectorAll('[data-param]').forEach(el=>{el.value=inputs[el.dataset.param];$('#out-'+el.dataset.param).textContent=inputs[el.dataset.param]});
+ $('#communities').innerHTML=M.communities(state,effective).map(([n,f,v,c])=>`<article class="community"><h3>${n}</h3><em>${f} <span style="font-size:14px">${v.toFixed(0)}</span></em><div class="bar"><i style="width:${v}%"></i></div><p>${c}</p></article>`).join('');renderHouse();if(!$('#comparison').hidden)renderCompare();}
+function renderHouse(){const state=result.history[year],h=M.household(state,year===0?M.defaults:inputs,family,city);$('#city-select').value=city;document.querySelectorAll('[data-family]').forEach(b=>{b.classList.toggle('active',+b.dataset.family===family);b.setAttribute('aria-pressed',+b.dataset.family===family)});$('#house-metrics').innerHTML=[['이동 부담',h.burden],['서비스 접근',h.service],['선택 여건',h.choice]].map(([n,v])=>`<div><small>${n} · 지수</small><b>${v.toFixed(1)}</b></div>`).join('');$('#story').textContent=h.story;}
+function renderCompare(){$('#comparison-note').textContent=`모두 ${year}년 후 · 공통 초기 상태 / 20만 명 / 공공예산 100 / 시드 42. 사용자 정의 입력은 포함하지 않습니다. 종합순위는 없습니다.`;$('#compare-grid').innerHTML=Object.entries(M.scenarios).map(([id,sc])=>{const s=M.simulate(sc.inputs,year).final;return `<article class="compare-card" data-comparison="${id}"><h3>${sc.name}</h3><svg class="map" viewBox="0 0 720 550" aria-label="${sc.name} 지도">${mapSVG(s,true,id)}</svg><dl>${Object.entries(labels).map(([k,n])=>`<dt>${n}${k==='hubShare'?'':' 지수'}</dt><dd>${s.metrics[k].toFixed(1)}${k==='hubShare'?'%':''}</dd>`).join('')}</dl><button data-export="${id}">결과 JSON ↓</button></article>`;}).join('');}
+function stop(){clearInterval(timer);timer=null;$('#play').textContent='▶ 재생';}
+function play(){stop();if(year>=20)year=0;$('#play').textContent='Ⅱ 정지';timer=setInterval(()=>{year++;render();if(year>=20)stop()},+$('#speed').value);}
+function download(id){const p=id?M.scenarios[id].inputs:inputs,r=M.simulate(p,year);const blob=new Blob([JSON.stringify({label:id?M.scenarios[id].name:custom?'사용자 정의':M.scenarios[selected].name,disclaimer:'합성 데이터 / 검증 전 가정 / 실제 예측 아님',horizon:year,...r},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`future-community-${id||'custom'}-${year}y.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+$('#scenario-buttons').onclick=e=>{if(!e.target.dataset.scenario)return;stop();selected=e.target.dataset.scenario;inputs={...M.scenarios[selected].inputs};custom=false;render()};document.querySelectorAll('[data-param]').forEach(el=>el.oninput=()=>{inputs[el.dataset.param]=+el.value;custom=true;render()});$('#year').oninput=e=>{stop();year=+e.target.value;render()};$('#reset').onclick=()=>{stop();year=0;custom=false;inputs={...M.scenarios[selected].inputs};render()};$('#play').onclick=()=>timer?stop():play();$('#speed').onchange=()=>{if(timer)play()};$('#city-select').onchange=e=>{city=+e.target.value;render()};$('#households').onclick=e=>{if(e.target.dataset.family===undefined)return;family=+e.target.dataset.family;renderHouse()};$('#world').onclick=e=>{const c=e.target.closest('[data-city]');if(c){city=+c.dataset.city;render()}};$('#world').onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();e.target.closest('[data-city]')?.dispatchEvent(new MouseEvent('click',{bubbles:true}))}};$('#compare-toggle').onclick=()=>{$('#comparison').hidden=!$('#comparison').hidden;if(!$('#comparison').hidden){renderCompare();$('#comparison').scrollIntoView({behavior:'smooth',block:'start'})}};$('#download').onclick=()=>download();$('#compare-grid').onclick=e=>{if(e.target.dataset.export)download(e.target.dataset.export)};
+$('#formula-text').textContent=`C(x) = min(100,max(0,x)); N = 200000; 거점 h=1, 나머지 h=0
+b = 거점 배분 또는 (100−거점 배분)/4
+P 주거압력 = C(20 + 42 × (인구/40000 − 1))
+V 방문 = C((24+.30협력+.15교역) × (1−.007이동비) × (h?1.12:1))
+O 기회 = C(18+.18AI+.10교역+.09협력+.10교육+.11원격×(h?.35:1)
+ −.15수익집중×(h?.35:1)+.38b+8h−.19P+(도시번호−2)×.8)
+S 서비스 = C(22+.32b+.20교육+.13AI+.14V−.16P+13h)
+B 이동부담 = C(9+.48이동비+.10P+10(1−h)(1−원격/100))
+E 에너지부담 = C((23+.42V+.35B)×(1−.0075청정))
+Y 청년 선택기회 = C(.40O+.25교육+.25참여+.10원격−.10P)
+U 이주유인 = .56O+.30S−.38P−.18B+고정 시드 미세차
+w = softmax(U/12); r = min(.06,.025+.00025원격)
+F(i→j) = 인구_i × r × w_j (i≠j). 전년도 상태에서 동시 계산.
+인구'_i = 인구_i − Σ유출_i + Σ유입_i
+전국 지수 = 도시 지수의 인구 가중평균. 거점 비중 = 거점 인구/N×100.
+가구 부담 = C(B×종류별 계수×(1−원격감쇠×원격/100)+고정마찰)
+종류별 계수 [1.12,.45,1.4,.85], 원격감쇠 [.15,.65,.02,.06], 마찰 [6,0,8,12].
+가구 서비스 = C(S+[.12교육,.10AI,−3,−8]−.12가구부담)
+가구 선택 = C(Y+[0,.16원격,−.14가구부담,−.20가구부담])
+주간 방문 = round([4,2,5,4]×(1−.006이동비)) (설명용)
+6공동체 대리지수: 가정 Y / 이웃 V / 마을 O / 도시 S / 국가 100−P /
+세계 (협력+교역+O)/3. 모든 공동체 값은 0–100 지수이며 기능의 실측치가 아님.`;
+window.simApp={getState:()=>({year,selected,custom,inputs:{...inputs},city,family,state:result.history[year]}),setYear:y=>{stop();year=Math.max(0,Math.min(20,Math.floor(y)));render()},stop,render};render();
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)$('#world').pauseAnimations();
+</script></body></html>
